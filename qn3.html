@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Login Form</title>
+    <style>
+       body {
+            margin: 0;
+            background-color: #007A94; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        
+        
+        .login-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px; 
+            box-sh
+            max-width: 400px;
+            width: 100%;
+        }
+
+        form {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        h2 {
+            color:  #E74C3C;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .remember {
+            margin:  0;
+        }
+
+        button {
+            width: 100%;
+            background-color: #E74C3C;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .bg {
+                display: none; 
+            }
+            .login-box {
+                flex: none;
+                width: 100%;
+                min-height: 100vh;
+                justify-content: center;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="login-box">
+            <form>
+                <h2>Login Form</h2>
+
+                <label>Email :</label>
+                <input type="text" name="email">
+
+                <label>Password :</label>
+                <input type="password" name="password">
+
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
